@@ -9,8 +9,9 @@ const routes = express.Router();
 routes.post('/sessions', sessionController.create);
 
 routes.get('/ongs', ongController.list);
+routes.post('/ongs', ongController.create);
 
-routes.post('/sessions', ongController.create);
+routes.post('/sessions', sessionController.create);
 
 routes.get('/profile', profileController.index);
 
